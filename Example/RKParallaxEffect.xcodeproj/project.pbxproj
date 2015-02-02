@@ -8,11 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		3503754C1A7F4CD500E0D7BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3503754B1A7F4CD500E0D7BE /* AppDelegate.swift */; };
-		3503754E1A7F4CD500E0D7BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3503754D1A7F4CD500E0D7BE /* ViewController.swift */; };
 		350375511A7F4CD500E0D7BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3503754F1A7F4CD500E0D7BE /* Main.storyboard */; };
 		350375531A7F4CD500E0D7BE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 350375521A7F4CD500E0D7BE /* Images.xcassets */; };
 		350375561A7F4CD500E0D7BE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 350375541A7F4CD500E0D7BE /* LaunchScreen.xib */; };
 		350375621A7F4CD600E0D7BE /* RKParallaxEffectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350375611A7F4CD600E0D7BE /* RKParallaxEffectTests.swift */; };
+		350375721A7F4D8100E0D7BE /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 3503756B1A7F4D8100E0D7BE /* LICENSE */; };
+		350375731A7F4D8100E0D7BE /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 3503756C1A7F4D8100E0D7BE /* README.md */; };
+		350375751A7F4D8100E0D7BE /* RKParallaxEffect.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 350375711A7F4D8100E0D7BE /* RKParallaxEffect.podspec */; };
+		350375771A7F4DD700E0D7BE /* RKParallaxEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 350375761A7F4DD700E0D7BE /* RKParallaxEffect.swift */; };
+		356366681A7F80B400D9354E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356366671A7F80B400D9354E /* TableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +33,17 @@
 		350375461A7F4CD500E0D7BE /* RKParallaxEffect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RKParallaxEffect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3503754A1A7F4CD500E0D7BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3503754B1A7F4CD500E0D7BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3503754D1A7F4CD500E0D7BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		350375501A7F4CD500E0D7BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		350375521A7F4CD500E0D7BE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		350375551A7F4CD500E0D7BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		3503755B1A7F4CD600E0D7BE /* RKParallaxEffectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RKParallaxEffectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		350375601A7F4CD600E0D7BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		350375611A7F4CD600E0D7BE /* RKParallaxEffectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKParallaxEffectTests.swift; sourceTree = "<group>"; };
+		3503756B1A7F4D8100E0D7BE /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		3503756C1A7F4D8100E0D7BE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		350375711A7F4D8100E0D7BE /* RKParallaxEffect.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = RKParallaxEffect.podspec; path = ../RKParallaxEffect.podspec; sourceTree = "<group>"; };
+		350375761A7F4DD700E0D7BE /* RKParallaxEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RKParallaxEffect.swift; sourceTree = "<group>"; };
+		356366671A7F80B400D9354E /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,9 +67,13 @@
 		3503753D1A7F4CD500E0D7BE = {
 			isa = PBXGroup;
 			children = (
-				350375481A7F4CD500E0D7BE /* RKParallaxEffect */,
+				350375481A7F4CD500E0D7BE /* Example */,
 				3503755E1A7F4CD600E0D7BE /* RKParallaxEffectTests */,
+				3503756D1A7F4D8100E0D7BE /* RKParallaxEffect */,
 				350375471A7F4CD500E0D7BE /* Products */,
+				3503756B1A7F4D8100E0D7BE /* LICENSE */,
+				3503756C1A7F4D8100E0D7BE /* README.md */,
+				350375711A7F4D8100E0D7BE /* RKParallaxEffect.podspec */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,16 +86,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		350375481A7F4CD500E0D7BE /* RKParallaxEffect */ = {
+		350375481A7F4CD500E0D7BE /* Example */ = {
 			isa = PBXGroup;
 			children = (
 				3503754B1A7F4CD500E0D7BE /* AppDelegate.swift */,
-				3503754D1A7F4CD500E0D7BE /* ViewController.swift */,
 				3503754F1A7F4CD500E0D7BE /* Main.storyboard */,
+				356366671A7F80B400D9354E /* TableViewController.swift */,
 				350375521A7F4CD500E0D7BE /* Images.xcassets */,
 				350375541A7F4CD500E0D7BE /* LaunchScreen.xib */,
 				350375491A7F4CD500E0D7BE /* Supporting Files */,
 			);
+			name = Example;
 			path = RKParallaxEffect;
 			sourceTree = "<group>";
 		};
@@ -110,6 +123,15 @@
 				350375601A7F4CD600E0D7BE /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		3503756D1A7F4D8100E0D7BE /* RKParallaxEffect */ = {
+			isa = PBXGroup;
+			children = (
+				350375761A7F4DD700E0D7BE /* RKParallaxEffect.swift */,
+			);
+			name = RKParallaxEffect;
+			path = ../RKParallaxEffect;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,7 +216,9 @@
 			files = (
 				350375511A7F4CD500E0D7BE /* Main.storyboard in Resources */,
 				350375561A7F4CD500E0D7BE /* LaunchScreen.xib in Resources */,
+				350375721A7F4D8100E0D7BE /* LICENSE in Resources */,
 				350375531A7F4CD500E0D7BE /* Images.xcassets in Resources */,
+				350375751A7F4D8100E0D7BE /* RKParallaxEffect.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -212,8 +236,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3503754E1A7F4CD500E0D7BE /* ViewController.swift in Sources */,
+				350375731A7F4D8100E0D7BE /* README.md in Sources */,
+				350375771A7F4DD700E0D7BE /* RKParallaxEffect.swift in Sources */,
 				3503754C1A7F4CD500E0D7BE /* AppDelegate.swift in Sources */,
+				356366681A7F80B400D9354E /* TableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +433,7 @@
 				350375671A7F4CD600E0D7BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		350375681A7F4CD600E0D7BE /* Build configuration list for PBXNativeTarget "RKParallaxEffectTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +442,7 @@
 				3503756A1A7F4CD600E0D7BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
