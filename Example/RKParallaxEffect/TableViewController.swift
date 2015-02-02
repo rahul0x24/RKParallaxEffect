@@ -26,7 +26,6 @@ class TableViewController: UITableViewController, RKParallaxEffectDelegate {
         super.viewDidAppear(animated)
         parallaxEffect = RKParallaxEffect(tableView: tableView)
         parallaxEffect.isParallaxEffectEnabled = true
-//        parallaxEffect.isFullScreenPanGestureRecognizerEnabled = true
         parallaxEffect.isFullScreenTapGestureRecognizerEnabled = true
     }
 
@@ -51,7 +50,6 @@ class TableViewController: UITableViewController, RKParallaxEffectDelegate {
         cell.textLabel?.text = "Row \(indexPath.row)"
         return cell
     }
-
 
     /*
     // Override to support conditional editing of the table view.

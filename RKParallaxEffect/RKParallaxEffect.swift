@@ -18,7 +18,6 @@ public class RKParallaxEffect: NSObject {
     var isAnimating = false
     var isFullScreen = false
     var initialContentSize: CGSize!
-    weak var delegate: RKParallaxEffectDelegate?
     
     var newFrame: CGRect {
         get {
@@ -152,10 +151,9 @@ public class RKParallaxEffect: NSObject {
         isAnimating = true
         tableView.scrollEnabled = false
         if isFullScreen {
-//            delegate?.willExitFullScreenMode()
+            
         } else {
             initialContentSize = tableView.contentSize
-//            delegate?.willEnterFullScreenMode()
         }
     }
     
@@ -165,18 +163,9 @@ public class RKParallaxEffect: NSObject {
         tableView.scrollEnabled = true;
         if isFullScreen {
             tableView.contentSize = CGSizeMake(initialContentSize.width, 0)
-//            delegate?.didEnterFullScreenMode()
         } else {
             tableView.contentSize = initialContentSize
-//            delegate?.didExitFullScreenMode()
         }
     }
     
-}
-
-@objc public protocol RKParallaxEffectDelegate : NSObjectProtocol {
-    optional func willEnterFullScreenMode()
-    optional func willExitFullScreenMode()
-    optional func didEnterFullScreenMode()
-    optional func didExitFullScreenMode()
 }
