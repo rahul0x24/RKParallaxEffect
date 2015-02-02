@@ -114,13 +114,13 @@ public class RKParallaxEffect: NSObject {
         }
     }
     
-    public func enterFullScreen() {
+    func enterFullScreen() {
         if !isFullScreen {
             handleTap(nil)
         }
     }
     
-    public func exitFullScreen() {
+    func exitFullScreen() {
         if isFullScreen {
             handleTap(nil)
         }

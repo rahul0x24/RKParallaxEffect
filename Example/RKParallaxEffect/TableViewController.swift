@@ -8,7 +8,7 @@
 
 import UIKit
 
-class TableViewController: UITableViewController, RKParallaxEffectDelegate {
+class TableViewController: UITableViewController {
 
     var parallaxEffect: RKParallaxEffect!
     
