@@ -14,9 +14,9 @@ Pod::Spec.new do |s|
   s.homepage         = "https://github.com/RahulKatariya/RKParallaxEffect"
   s.license          = { :type => "MIT", :file => "LICENSE" }
   s.author           = { "Rahul Katariya" => "rahulkatariya@me.com" }
-  s.source           = { :git => "https://github.com/RahulKatariya/RKParallaxEffect.git", :tag => "v1.0.0" }
+  s.source           = { :git => "https://github.com/RahulKatariya/RKParallaxEffect.git", :tag => "v#{s.version}" }
   s.social_media_url = 'https://twitter.com/rahulkatariya91'
-  s.platform    	   = :ios, '8.0'
+  s.ios.deployment_target = '8.0'
   s.requires_arc	   = true
   s.source_files	   = 'RKParallaxEffect/RKParallaxEffect.swift'
 end
