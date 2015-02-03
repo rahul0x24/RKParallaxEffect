@@ -9,12 +9,12 @@
 
 Pod::Spec.new do |s|
   s.name             = "RKParallaxEffect"
-  s.version          = "0.1.0"
-  s.summary          = "RKParallaxEffect provides api to create a parallax effect on table view header"
+  s.version          = "1.0.0"
+  s.summary          = "RKParallaxEffect is written in Swift and provides API to create a parallax effect on UITableHeaderView"
   s.homepage         = "https://github.com/RahulKatariya/RKParallaxEffect"
   s.license          = { :type => "MIT", :file => "LICENSE" }
   s.author           = { "Rahul Katariya" => "rahulkatariya@me.com" }
-  s.source           = { :git => "https://github.com/RahulKatariya/RKParallaxEffect.git", :tag => "v0.1.0" }
+  s.source           = { :git => "https://github.com/RahulKatariya/RKParallaxEffect.git", :tag => "v1.0.0" }
   s.social_media_url = 'https://twitter.com/rahulkatariya91'
   s.platform    	   = :ios, '8.0'
   s.requires_arc	   = true
