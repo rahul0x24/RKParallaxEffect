@@ -13,21 +13,21 @@ public class RKParallaxEffect: NSObject {
     var tableView:UITableView!
     var tableHeaderView:UIView?
     var tableViewTopInset: CGFloat = 0
+    
+    public var isParallaxEffectEnabled: Bool = false {
+        didSet {
+            if isParallaxEffectEnabled {
+                self.addObservers()
+            }
+        }
+    }
+    
+    //FullScreen Tap
     var tableHeaderViewIntitalFrame:CGRect!
     var isFullScreenModeEnabled = false
     var isAnimating = false
     var isFullScreen = false
     var initialContentSize: CGSize!
-    
-    var newFrame: CGRect {
-        get {
-            if isFullScreen {
-                return tableHeaderViewIntitalFrame
-            } else {
-                return CGRectMake(tableView.frame.origin.x, -(tableView.frame.size.height-tableViewTopInset), tableView.frame.size.width, tableView.frame.size.height-tableViewTopInset);
-            }
-        }
-    }
     
     public var isFullScreenTapGestureRecognizerEnabled: Bool = false {
         didSet {
@@ -41,10 +41,29 @@ public class RKParallaxEffect: NSObject {
         }
     }
     
-    public var isParallaxEffectEnabled: Bool = false {
+    var newFrame: CGRect {
+        get {
+            if isFullScreen {
+                return tableHeaderViewIntitalFrame
+            } else {
+                return CGRectMake(tableView.frame.origin.x, -(tableView.frame.size.height-tableViewTopInset), tableView.frame.size.width, tableView.frame.size.height-tableViewTopInset)
+            }
+        }
+    }
+    
+    //FullScreen Pan
+    public var thresholdValue: CGFloat = 100.0
+    
+    public var isFullScreenPanGestureRecognizerEnabled: Bool = false {
         didSet {
-            if isParallaxEffectEnabled {
-                self.addObservers()
+            if isFullScreenPanGestureRecognizerEnabled {
+                if !isFullScreenModeEnabled {
+                    isFullScreenModeEnabled = true
+                }
+                if !isParallaxEffectEnabled {
+                    isParallaxEffectEnabled = true
+                }
+                tableHeaderView?.userInteractionEnabled = true
             }
         }
     }
@@ -110,6 +129,25 @@ public class RKParallaxEffect: NSObject {
                 if isParallaxEffectEnabled {
                     thv.frame = CGRectMake(0, -yOffset, CGRectGetWidth(thv.frame), yOffset)
                 }
+                if isFullScreenModeEnabled && !isAnimating {
+                    if isFullScreenPanGestureRecognizerEnabled {
+                        if !isFullScreen && yOffset > tableHeaderViewIntitalFrame.size.height + thresholdValue {
+                            tableView.scrollEnabled = false
+                            var frame = tableHeaderViewIntitalFrame
+                            frame.size.height = yOffset
+                            thv.frame = frame
+                            tableView.layoutIfNeeded()
+                            enterFullScreen()
+                        } else if isFullScreen && yOffset < tableView.frame.size.height-tableViewTopInset-thresholdValue {
+                            tableView.scrollEnabled = false
+                            var frame = CGRectMake(tableView.frame.origin.x, -(tableView.frame.size.height-tableViewTopInset), tableView.frame.size.width, tableView.frame.size.height-tableViewTopInset)
+                            frame.size.height -= thresholdValue
+                            thv.frame = frame
+                            tableView.layoutIfNeeded()
+                            exitFullScreen()
+                        }
+                    }
+                }
             }
         }
     }
@@ -128,7 +166,7 @@ public class RKParallaxEffect: NSObject {
     
     func handleTap(sender:AnyObject?) {
         self.willChangeFullScreenMode()
-        UIView.animateWithDuration(0.5, delay: 0, options: .CurveEaseInOut | .BeginFromCurrentState | .BeginFromCurrentState, animations: { () -> Void in
+        UIView.animateWithDuration(0.3, delay: 0, options: .CurveEaseInOut | .BeginFromCurrentState | .BeginFromCurrentState, animations: { () -> Void in
             self.adjustTableViewContentInset()
             self.tableHeaderView!.frame = self.newFrame
             }) { (completed: Bool) -> Void in
@@ -149,7 +187,6 @@ public class RKParallaxEffect: NSObject {
     
     func willChangeFullScreenMode() {
         isAnimating = true
-        tableView.scrollEnabled = false
         if isFullScreen {
             
         } else {
@@ -160,7 +197,7 @@ public class RKParallaxEffect: NSObject {
     func didChangeFullScreenMode() {
         isFullScreen = !isFullScreen
         isAnimating = false
-        tableView.scrollEnabled = true;
+        tableView.scrollEnabled = true
         if isFullScreen {
             tableView.contentSize = CGSizeMake(initialContentSize.width, 0)
         } else {

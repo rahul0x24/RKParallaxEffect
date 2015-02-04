@@ -27,6 +27,7 @@ class TableViewController: UITableViewController {
         parallaxEffect = RKParallaxEffect(tableView: tableView)
         parallaxEffect.isParallaxEffectEnabled = true
         parallaxEffect.isFullScreenTapGestureRecognizerEnabled = true
+        parallaxEffect.isFullScreenPanGestureRecognizerEnabled = true
     }
 
     override func didReceiveMemoryWarning() {
