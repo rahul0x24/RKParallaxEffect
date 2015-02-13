@@ -8,7 +8,7 @@
 
 import UIKit
 
-public class RKParallaxEffect: NSObject {
+public class RKParallaxEffect {
     
     var tableView:UITableView!
     var tableHeaderView:UIView?

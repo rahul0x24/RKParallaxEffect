@@ -4,6 +4,7 @@
 target 'RKParallaxEffect' do
 
 pod 'RKParallaxEffect', '~> 1.0.0'
+pod 'Alamofire'
 
 end
 
