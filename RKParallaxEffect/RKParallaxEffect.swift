@@ -69,7 +69,6 @@ public class RKParallaxEffect {
     }
     
     init(tableView:UITableView) {
-        super.init()
         self.tableView = tableView
         self.tableHeaderView = tableView.tableHeaderView
         self.setupTableHeaderView()
@@ -114,7 +113,7 @@ public class RKParallaxEffect {
         tableHeaderView?.removeObserver(self, forKeyPath: "frame")
     }
     
-    override public func observeValueForKeyPath(keyPath: String, ofObject object: AnyObject, change: [NSObject : AnyObject], context: UnsafeMutablePointer<Void>) {
+    func observeValueForKeyPath(keyPath: String, ofObject object: AnyObject, change: [NSObject : AnyObject], context: UnsafeMutablePointer<Void>) {
         if keyPath == "contentOffset" {
             adjustParallaxEffectOnTableHeaderViewWithContentOffset(change[NSKeyValueChangeNewKey]!.CGPointValue())
         } else if keyPath == "frame" {
