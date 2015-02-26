@@ -1,82 +1,150 @@
 <!doctype html>
 <html>
-  <head>
+<head>
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Rkparallaxeffect by RahulKatariya</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/main.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link rel="shortcut icon" type="image/png" href="favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
+    <link rel="stylesheet" id="ppstyle" type="text/css" href="style.css">
+    <link rel='stylesheet' href='./css/font-awesome.min.css'/>
+    <script src="./js/jquery-2.1.0.min.js"></script>
+    <script src="./js/bootstrap.js"></script>
+    <script src="./js/blocs.js"></script>
+    <title>index - </title>
+</head>
+<body>
+<!-- Main container -->
+<div class="page-container">
+    <!-- Navigation Bloc --><div class="bloc bgc-2 d-bloc" id="nav-bloc">
+	<div class="container bloc-md">
+		<nav class="navbar row">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html">RKParallaxEffect</a>
+				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
+					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse navbar-1">
+				<ul class="site-navigation nav">
+					<li>
+						<a id="pl-undefined" href="http://github.com/rahulkatariya/rkparallaxeffect" class="pull-left" target="_blank">View On Github</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</div>
+</div><!-- Navigation Bloc END --><!-- bloc-1 --><div class="bloc  d-bloc" id="bloc-1">
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-12">
+				<img class="img-responsive center-block" src="img/RKParallaxEffect.gif" width="320" alt='' />
+			</div>
+		</div>
+	</div>
+</div><!-- bloc-1 END --><!-- bloc-2 --><div class="bloc  l-bloc" id="bloc-2">
+	<div class="container bloc-sm">
+		<div class="row">
+			<div class="col-sm-4">
+				<h3 class="text-right mg-clear">
+					Summary
+				</h3>
+			</div>
+			<div class="col-sm-8">
+				<p>
+					RKParallax Effect is a iOS Library that is written in swift and provides API to create a parallax effect on UITableHeaderView.
+				</p>
+			</div>
+		</div>
+	</div>
+</div><!-- bloc-2 END --><!-- bloc-3 --><div class="bloc  l-bloc" id="bloc-3">
+	<div class="container bloc-sm">
+		<div class="row">
+			<div class="col-sm-4">
+				<h3 class="text-right mg-clear">
+					Installation
+				</h3>
+			</div>
+			<div class="col-sm-8">
+				<p>
+					RKParallaxEffect is available through CocoaPods. To install it, simply add the following line to your Podfile:<br /><br /><strong>pod "RKParallaxEffect"</strong>
+				</p>
+			</div>
+		</div>
+	</div>
+</div><!-- bloc-3 END --><!-- bloc-4 --><div class="bloc  l-bloc" id="bloc-4">
+	<div class="container bloc-sm">
+		<div class="row">
+			<div class="col-sm-4">
+				<h3 class="text-right mg-clear">
+					Usage
+				</h3>
+			</div>
+			<div class="col-sm-8">
+				<p>
+					<strong>Define a property in a UIViewController with UITableView</strong><br />var parallaxEffect: RKParallaxEffect!<br /><br /><strong>In viewDidAppear write</strong><br />parallaxEffect = RKParallaxEffect(tableView: tableView)<br />parallaxEffect.isParallaxEffectEnabled = true
+				</p>
+			</div>
+		</div>
+	</div>
+</div><!-- bloc-4 END --><!-- bloc-5 --><div class="bloc  l-bloc" id="bloc-5">
+	<div class="container bloc-sm">
+		<div class="row">
+			<div class="col-sm-4">
+				<h3 class="text-right  mg-clear">
+					Author
+				</h3>
+			</div>
+			<div class="col-sm-8">
+				<p class="mg-clear">
+					Rahul Katariya, rahulkatariya@me.com
+				</p>
+			</div>
+		</div>
+	</div>
+</div><!-- bloc-5 END --><!-- bloc-6 --><div class="bloc  l-bloc" id="bloc-6">
+	<div class="container bloc-sm">
+		<div class="row">
+			<div class="col-sm-4">
+				<h3 class="text-right mg-clear">
+					Licence
+				</h3>
+			</div>
+			<div class="col-sm-8">
+				<p>
+					RKAppearance is available under the MIT license. See the LICENSE file for more info.
+				</p>
+			</div>
+		</div>
+	</div>
+</div><!-- bloc-6 END --><!-- Footer - bloc-7 --><div class="bloc  d-bloc" id="bloc-7">
+	<div class="container bloc-lg">
+		<div class="row">
+			<div class="col-sm-12 col-md-8 col-md-offset-2">
+				<div class="col-sm-3 text-center">
+					<a class="social-lg" href="#"><span class="fa fa-twitter icon-lg"></span></a>
+				</div>
+				<div class="col-sm-3 text-center">
+					<a class="social-lg" href="#"><span class="fa fa-facebook icon-lg"></span></a>
+				</div>
+				<div class="col-sm-3 text-center">
+					<a class="social-lg" href="index.html"><span class="fa fa-linkedin icon-lg"></span></a>
+				</div>
+				<div class="col-sm-3 text-center">
+					<a class="social-lg" href="index.html"><span class="fa fa-stack-overflow icon-lg"></span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</div><!-- Footer - bloc-7 END -->
+</div>
+<!-- Main container END -->
 
-  </head>
-  <body>
-
-      <header>
-        <h1>Rkparallaxeffect</h1>
-        <p></p>
-      </header>
-
-      <div id="banner">
-        <span id="logo"></span>
-
-        <a href="https://github.com/RahulKatariya/RKParallaxEffect" class="button fork"><strong>View On GitHub</strong></a>
-        <div class="downloads">
-          <span>Downloads:</span>
-          <ul>
-            <li><a href="https://github.com/RahulKatariya/RKParallaxEffect/zipball/master" class="button">ZIP</a></li>
-            <li><a href="https://github.com/RahulKatariya/RKParallaxEffect/tarball/master" class="button">TAR</a></li>
-          </ul>
-        </div>
-      </div><!-- end banner -->
-
-    <div class="wrapper">
-      <nav>
-        <ul></ul>
-      </nav>
-      <section>
-        <h1>
-<a id="rkparallaxeffect" class="anchor" href="#rkparallaxeffect" aria-hidden="true"><span class="octicon octicon-link"></span></a>RKParallaxEffect</h1>
-
-<p><a href="https://travis-ci.org/Rahul%20Katariya/RKParallaxEffect"><img src="http://img.shields.io/travis/Rahul%20Katariya/RKParallaxEffect.svg?style=flat" alt="CI Status"></a>
-<a href="http://cocoadocs.org/docsets/RKParallaxEffect"><img src="https://img.shields.io/cocoapods/v/RKParallaxEffect.svg?style=flat" alt="Version"></a>
-<a href="http://cocoadocs.org/docsets/RKParallaxEffect"><img src="https://img.shields.io/cocoapods/l/RKParallaxEffect.svg?style=flat" alt="License"></a>
-<a href="http://cocoadocs.org/docsets/RKParallaxEffect"><img src="https://img.shields.io/cocoapods/p/RKParallaxEffect.svg?style=flat" alt="Platform"></a></p>
-
-<h2>
-<a id="usage" class="anchor" href="#usage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Usage</h2>
-
-<p>To run the example project, clone the repo, and run <code>pod install</code> from the Example directory first.</p>
-
-<h2>
-<a id="installation" class="anchor" href="#installation" aria-hidden="true"><span class="octicon octicon-link"></span></a>Installation</h2>
-
-<p>RKParallaxEffect is available through <a href="http://cocoapods.org">CocoaPods</a>. To install
-it, simply add the following line to your Podfile:</p>
-
-<pre><code>pod "RKParallaxEffect"
-</code></pre>
-
-<h2>
-<a id="author" class="anchor" href="#author" aria-hidden="true"><span class="octicon octicon-link"></span></a>Author</h2>
-
-<p>Rahul Katariya, <a href="mailto:rahulkatariya@me.com">rahulkatariya@me.com</a></p>
-
-<h2>
-<a id="license" class="anchor" href="#license" aria-hidden="true"><span class="octicon octicon-link"></span></a>License</h2>
-
-<p>RKAppearance is available under the MIT license. See the LICENSE file for more info.</p>
-      </section>
-      <footer>
-        <p>Project maintained by <a href="https://github.com/RahulKatariya">RahulKatariya</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></small></p>
-      </footer>
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+</body>
     
-  </body>
+<!-- Google Analytics -->
+
+<!-- Google Analytics END -->
+
 </html>
