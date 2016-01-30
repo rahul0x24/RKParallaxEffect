@@ -5,10 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/RKParallaxEffect.svg?style=flat)](http://cocoadocs.org/docsets/RKParallaxEffect)
 [![Platform](https://img.shields.io/cocoapods/p/RKParallaxEffect.svg?style=flat)](http://cocoadocs.org/docsets/RKParallaxEffect)
 
-## Usage
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
-
+[![Preview](https://raw.githubusercontent.com/RahulKatariya/RKParallaxEffect/RKParallaxEffect.gif)](http://RahulKatariya.github.io/RKParallaxEffect)
 
 ## Installation
 
@@ -17,10 +14,23 @@ it, simply add the following line to your Podfile:
 
     pod "RKParallaxEffect"
 
+
+## Usage
+```swift
+var parallaxEffect: RKParallaxEffect!
+
+override func viewDidAppear(animated: Bool) {
+    super.viewDidAppear(animated)
+    parallaxEffect = RKParallaxEffect(tableView: tableView)
+    parallaxEffect.isParallaxEffectEnabled = true
+    parallaxEffect.isFullScreenTapGestureRecognizerEnabled = true
+    parallaxEffect.isFullScreenPanGestureRecognizerEnabled = true
+}```
+
 ## Author
 
 Rahul Katariya, rahulkatariya@me.com
 
 ## License
 
-RKAppearance is available under the MIT license. See the LICENSE file for more info.
+RKParallaxEffect is available under the MIT license. See the LICENSE file for more info.

@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--RKParallaxEffect-->
         <scene sceneID="IOL-SX-m3D">
             <objects>
                 <tableViewController id="mP6-C1-Rut" customClass="TableViewController" customModule="RKParallaxEffect" customModuleProvider="target" sceneMemberID="viewController">
@@ -32,7 +32,7 @@
                             <outlet property="delegate" destination="mP6-C1-Rut" id="Lb0-fs-G6Z"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="8cz-kW-Mx6"/>
+                    <navigationItem key="navigationItem" title="RKParallaxEffect" id="8cz-kW-Mx6"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OH8-IP-3xJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
