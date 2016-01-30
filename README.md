@@ -24,7 +24,7 @@ RKParallaxEffect is available through [CocoaPods](http://cocoapods.org). To inst
 it, simply add the following line to your Podfile:
 
     use_frameworks!
-    pod "RKParallaxEffect"
+    pod "RKParallaxEffect", ~> '1.0'
 
 
 ## Usage

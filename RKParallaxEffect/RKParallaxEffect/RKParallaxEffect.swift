@@ -69,7 +69,7 @@ public class RKParallaxEffect: NSObject {
         }
     }
     
-    init(tableView:UITableView) {
+    public init(tableView:UITableView) {
         self.tableView = tableView
         self.tableHeaderView = tableView.tableHeaderView
         super.init()
