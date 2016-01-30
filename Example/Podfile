@@ -2,7 +2,7 @@
 platform :ios, '8.0'
 use_frameworks!
 
-target 'RKParallaxEffect' do
+target 'Example' do
 
 pod 'RKParallaxEffect', '~> 1.0'
 

@@ -12,11 +12,9 @@
 		350375531A7F4CD500E0D7BE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 350375521A7F4CD500E0D7BE /* Images.xcassets */; };
 		350375561A7F4CD500E0D7BE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 350375541A7F4CD500E0D7BE /* LaunchScreen.xib */; };
 		356366681A7F80B400D9354E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356366671A7F80B400D9354E /* TableViewController.swift */; };
-		C6DE99E24CE0FE5120C9BA4B /* Pods_RKParallaxEffect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74795A4A36FFE3D2FA9A7471 /* Pods_RKParallaxEffect.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0C931A6F6310092822A8AB29 /* Pods-RKParallaxEffect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RKParallaxEffect.release.xcconfig"; path = "Pods/Target Support Files/Pods-RKParallaxEffect/Pods-RKParallaxEffect.release.xcconfig"; sourceTree = "<group>"; };
 		350375461A7F4CD500E0D7BE /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3503754A1A7F4CD500E0D7BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3503754B1A7F4CD500E0D7BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -28,8 +26,8 @@
 		350375711A7F4D8100E0D7BE /* RKParallaxEffect.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = RKParallaxEffect.podspec; path = ../RKParallaxEffect.podspec; sourceTree = "<group>"; };
 		356366671A7F80B400D9354E /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		35DEA9251C5CCEAD00BA22CE /* RKParallaxEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RKParallaxEffect.swift; path = RKParallaxEffect/RKParallaxEffect.swift; sourceTree = "<group>"; };
-		74795A4A36FFE3D2FA9A7471 /* Pods_RKParallaxEffect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RKParallaxEffect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		79915F2F048BF551E7F26FAB /* Pods-RKParallaxEffect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RKParallaxEffect.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RKParallaxEffect/Pods-RKParallaxEffect.debug.xcconfig"; sourceTree = "<group>"; };
+		E946D7E2537F1C265080C6E6 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
+		F7324457F6B1A002DDEAEAFC /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,7 +35,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6DE99E24CE0FE5120C9BA4B /* Pods_RKParallaxEffect.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -47,8 +44,8 @@
 		287D0B6B4364AB9EA0E060B9 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				79915F2F048BF551E7F26FAB /* Pods-RKParallaxEffect.debug.xcconfig */,
-				0C931A6F6310092822A8AB29 /* Pods-RKParallaxEffect.release.xcconfig */,
+				E946D7E2537F1C265080C6E6 /* Pods-Example.debug.xcconfig */,
+				F7324457F6B1A002DDEAEAFC /* Pods-Example.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -109,7 +106,6 @@
 		358B1ED74FCD7F9C2F7945CD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				74795A4A36FFE3D2FA9A7471 /* Pods_RKParallaxEffect.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -197,7 +193,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RKParallaxEffect/Pods-RKParallaxEffect-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Example/Pods-Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		50147210BCB88F5DF943C98B /* Check Pods Manifest.lock */ = {
@@ -227,7 +223,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RKParallaxEffect/Pods-RKParallaxEffect-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Example/Pods-Example-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -299,7 +295,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -336,7 +332,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -346,10 +342,11 @@
 		};
 		350375661A7F4CD600E0D7BE /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 79915F2F048BF551E7F26FAB /* Pods-RKParallaxEffect.debug.xcconfig */;
+			baseConfigurationReference = E946D7E2537F1C265080C6E6 /* Pods-Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RKParallaxEffect/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rahulkatariya.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = Example;
@@ -358,10 +355,11 @@
 		};
 		350375671A7F4CD600E0D7BE /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C931A6F6310092822A8AB29 /* Pods-RKParallaxEffect.release.xcconfig */;
+			baseConfigurationReference = F7324457F6B1A002DDEAEAFC /* Pods-Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RKParallaxEffect/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rahulkatariya.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = Example;
