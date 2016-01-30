@@ -14,23 +14,37 @@
 
 ## Installation
 
+### Carthage
+
+    github "RahulKatariya/RKParallaxEffect" ~> 1.0
+
+### CocoaPods
+
 RKParallaxEffect is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
+    use_frameworks!
     pod "RKParallaxEffect"
 
 
 ## Usage
 ```swift
-var parallaxEffect: RKParallaxEffect!
+import RKParallaxEffect
 
-override func viewDidAppear(animated: Bool) {
-    super.viewDidAppear(animated)
-    parallaxEffect = RKParallaxEffect(tableView: tableView)
-    parallaxEffect.isParallaxEffectEnabled = true
-    parallaxEffect.isFullScreenTapGestureRecognizerEnabled = true
-    parallaxEffect.isFullScreenPanGestureRecognizerEnabled = true
+class TableViewController: UITableViewController {
+
+    var parallaxEffect: RKParallaxEffect!
+
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        parallaxEffect = RKParallaxEffect(tableView: tableView)
+        parallaxEffect.isParallaxEffectEnabled = true
+        parallaxEffect.isFullScreenTapGestureRecognizerEnabled = true
+        parallaxEffect.isFullScreenPanGestureRecognizerEnabled = true
+    }
+
 }
+
 ```
 
 ## Author
