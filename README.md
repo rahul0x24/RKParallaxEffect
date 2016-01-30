@@ -5,7 +5,12 @@
 [![License](https://img.shields.io/cocoapods/l/RKParallaxEffect.svg?style=flat)](http://cocoadocs.org/docsets/RKParallaxEffect)
 [![Platform](https://img.shields.io/cocoapods/p/RKParallaxEffect.svg?style=flat)](http://cocoadocs.org/docsets/RKParallaxEffect)
 
-[![Preview](https://raw.githubusercontent.com/RahulKatariya/RKParallaxEffect/RKParallaxEffect.gif)](http://RahulKatariya.github.io/RKParallaxEffect)
+[![Preview](https://raw.githubusercontent.com/RahulKatariya/RKParallaxEffect/master/RKParallaxEffect.gif)](http://RahulKatariya.github.io/RKParallaxEffect)
+
+## Requirements
+
+* iOS 8.0+
+* Xcode 7.0+
 
 ## Installation
 
@@ -25,7 +30,8 @@ override func viewDidAppear(animated: Bool) {
     parallaxEffect.isParallaxEffectEnabled = true
     parallaxEffect.isFullScreenTapGestureRecognizerEnabled = true
     parallaxEffect.isFullScreenPanGestureRecognizerEnabled = true
-}```
+}
+```
 
 ## Author
 
