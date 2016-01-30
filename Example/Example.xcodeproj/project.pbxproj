@@ -12,6 +12,7 @@
 		350375531A7F4CD500E0D7BE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 350375521A7F4CD500E0D7BE /* Images.xcassets */; };
 		350375561A7F4CD500E0D7BE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 350375541A7F4CD500E0D7BE /* LaunchScreen.xib */; };
 		356366681A7F80B400D9354E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356366671A7F80B400D9354E /* TableViewController.swift */; };
+		C49D95F3321C5B212EDB0F97 /* Pods_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D080EDDD702800012FDB36A /* Pods_Example.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,11 +22,8 @@
 		350375501A7F4CD500E0D7BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		350375521A7F4CD500E0D7BE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		350375551A7F4CD500E0D7BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		3503756B1A7F4D8100E0D7BE /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		3503756C1A7F4D8100E0D7BE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		350375711A7F4D8100E0D7BE /* RKParallaxEffect.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = RKParallaxEffect.podspec; path = ../RKParallaxEffect.podspec; sourceTree = "<group>"; };
 		356366671A7F80B400D9354E /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		35DEA9251C5CCEAD00BA22CE /* RKParallaxEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RKParallaxEffect.swift; path = RKParallaxEffect/RKParallaxEffect.swift; sourceTree = "<group>"; };
+		7D080EDDD702800012FDB36A /* Pods_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E946D7E2537F1C265080C6E6 /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		F7324457F6B1A002DDEAEAFC /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -35,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C49D95F3321C5B212EDB0F97 /* Pods_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -53,13 +52,9 @@
 		3503753D1A7F4CD500E0D7BE = {
 			isa = PBXGroup;
 			children = (
-				3515DA891A8DE77D00E39CCC /* RKParallaxEffect */,
 				350375481A7F4CD500E0D7BE /* Example */,
 				350375471A7F4CD500E0D7BE /* Products */,
 				358B1ED74FCD7F9C2F7945CD /* Frameworks */,
-				3503756B1A7F4D8100E0D7BE /* LICENSE */,
-				3503756C1A7F4D8100E0D7BE /* README.md */,
-				350375711A7F4D8100E0D7BE /* RKParallaxEffect.podspec */,
 				287D0B6B4364AB9EA0E060B9 /* Pods */,
 			);
 			sourceTree = "<group>";
@@ -94,18 +89,10 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		3515DA891A8DE77D00E39CCC /* RKParallaxEffect */ = {
-			isa = PBXGroup;
-			children = (
-				35DEA9251C5CCEAD00BA22CE /* RKParallaxEffect.swift */,
-			);
-			name = RKParallaxEffect;
-			path = ../RKParallaxEffect;
-			sourceTree = "<group>";
-		};
 		358B1ED74FCD7F9C2F7945CD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7D080EDDD702800012FDB36A /* Pods_Example.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

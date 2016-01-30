@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RKParallaxEffect
 
 class TableViewController: UITableViewController {
 
