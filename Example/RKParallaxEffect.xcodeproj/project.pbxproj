@@ -12,7 +12,7 @@
 		350375531A7F4CD500E0D7BE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 350375521A7F4CD500E0D7BE /* Images.xcassets */; };
 		350375561A7F4CD500E0D7BE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 350375541A7F4CD500E0D7BE /* LaunchScreen.xib */; };
 		356366681A7F80B400D9354E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356366671A7F80B400D9354E /* TableViewController.swift */; };
-		35DEA90D1C5CC1D500BA22CE /* RKParallaxEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3515DA8A1A8DE77D00E39CCC /* RKParallaxEffect.swift */; };
+		35DEA9261C5CCEAD00BA22CE /* RKParallaxEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DEA9251C5CCEAD00BA22CE /* RKParallaxEffect.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,8 +25,8 @@
 		3503756B1A7F4D8100E0D7BE /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		3503756C1A7F4D8100E0D7BE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		350375711A7F4D8100E0D7BE /* RKParallaxEffect.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = RKParallaxEffect.podspec; path = ../RKParallaxEffect.podspec; sourceTree = "<group>"; };
-		3515DA8A1A8DE77D00E39CCC /* RKParallaxEffect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RKParallaxEffect.swift; sourceTree = "<group>"; };
 		356366671A7F80B400D9354E /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		35DEA9251C5CCEAD00BA22CE /* RKParallaxEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RKParallaxEffect.swift; path = RKParallaxEffect/RKParallaxEffect.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +86,7 @@
 		3515DA891A8DE77D00E39CCC /* RKParallaxEffect */ = {
 			isa = PBXGroup;
 			children = (
-				3515DA8A1A8DE77D00E39CCC /* RKParallaxEffect.swift */,
+				35DEA9251C5CCEAD00BA22CE /* RKParallaxEffect.swift */,
 			);
 			name = RKParallaxEffect;
 			path = ../RKParallaxEffect;
@@ -171,7 +171,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35DEA90D1C5CC1D500BA22CE /* RKParallaxEffect.swift in Sources */,
+				35DEA9261C5CCEAD00BA22CE /* RKParallaxEffect.swift in Sources */,
 				3503754C1A7F4CD500E0D7BE /* AppDelegate.swift in Sources */,
 				356366681A7F80B400D9354E /* TableViewController.swift in Sources */,
 			);
