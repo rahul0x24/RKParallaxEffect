@@ -12,11 +12,12 @@
 		350375531A7F4CD500E0D7BE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 350375521A7F4CD500E0D7BE /* Images.xcassets */; };
 		350375561A7F4CD500E0D7BE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 350375541A7F4CD500E0D7BE /* LaunchScreen.xib */; };
 		356366681A7F80B400D9354E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 356366671A7F80B400D9354E /* TableViewController.swift */; };
-		35DEA9261C5CCEAD00BA22CE /* RKParallaxEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DEA9251C5CCEAD00BA22CE /* RKParallaxEffect.swift */; };
+		C6DE99E24CE0FE5120C9BA4B /* Pods_RKParallaxEffect.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74795A4A36FFE3D2FA9A7471 /* Pods_RKParallaxEffect.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		350375461A7F4CD500E0D7BE /* RKParallaxEffect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RKParallaxEffect.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C931A6F6310092822A8AB29 /* Pods-RKParallaxEffect.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RKParallaxEffect.release.xcconfig"; path = "Pods/Target Support Files/Pods-RKParallaxEffect/Pods-RKParallaxEffect.release.xcconfig"; sourceTree = "<group>"; };
+		350375461A7F4CD500E0D7BE /* Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3503754A1A7F4CD500E0D7BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3503754B1A7F4CD500E0D7BE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		350375501A7F4CD500E0D7BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -27,6 +28,8 @@
 		350375711A7F4D8100E0D7BE /* RKParallaxEffect.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = RKParallaxEffect.podspec; path = ../RKParallaxEffect.podspec; sourceTree = "<group>"; };
 		356366671A7F80B400D9354E /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		35DEA9251C5CCEAD00BA22CE /* RKParallaxEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RKParallaxEffect.swift; path = RKParallaxEffect/RKParallaxEffect.swift; sourceTree = "<group>"; };
+		74795A4A36FFE3D2FA9A7471 /* Pods_RKParallaxEffect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RKParallaxEffect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		79915F2F048BF551E7F26FAB /* Pods-RKParallaxEffect.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RKParallaxEffect.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RKParallaxEffect/Pods-RKParallaxEffect.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,12 +37,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6DE99E24CE0FE5120C9BA4B /* Pods_RKParallaxEffect.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		287D0B6B4364AB9EA0E060B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				79915F2F048BF551E7F26FAB /* Pods-RKParallaxEffect.debug.xcconfig */,
+				0C931A6F6310092822A8AB29 /* Pods-RKParallaxEffect.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		3503753D1A7F4CD500E0D7BE = {
 			isa = PBXGroup;
 			children = (
@@ -50,13 +63,14 @@
 				3503756B1A7F4D8100E0D7BE /* LICENSE */,
 				3503756C1A7F4D8100E0D7BE /* README.md */,
 				350375711A7F4D8100E0D7BE /* RKParallaxEffect.podspec */,
+				287D0B6B4364AB9EA0E060B9 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
 		350375471A7F4CD500E0D7BE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				350375461A7F4CD500E0D7BE /* RKParallaxEffect.app */,
+				350375461A7F4CD500E0D7BE /* Example.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,6 +109,7 @@
 		358B1ED74FCD7F9C2F7945CD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				74795A4A36FFE3D2FA9A7471 /* Pods_RKParallaxEffect.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -102,21 +117,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		350375451A7F4CD500E0D7BE /* RKParallaxEffect */ = {
+		350375451A7F4CD500E0D7BE /* Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 350375651A7F4CD600E0D7BE /* Build configuration list for PBXNativeTarget "RKParallaxEffect" */;
+			buildConfigurationList = 350375651A7F4CD600E0D7BE /* Build configuration list for PBXNativeTarget "Example" */;
 			buildPhases = (
+				50147210BCB88F5DF943C98B /* Check Pods Manifest.lock */,
 				350375421A7F4CD500E0D7BE /* Sources */,
 				350375431A7F4CD500E0D7BE /* Frameworks */,
 				350375441A7F4CD500E0D7BE /* Resources */,
+				0D754EBCE616C93EAA7E1801 /* Embed Pods Frameworks */,
+				84CC2C9444C96607F85928B2 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = RKParallaxEffect;
+			name = Example;
 			productName = RKParallaxEffect;
-			productReference = 350375461A7F4CD500E0D7BE /* RKParallaxEffect.app */;
+			productReference = 350375461A7F4CD500E0D7BE /* Example.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -135,7 +153,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 350375411A7F4CD500E0D7BE /* Build configuration list for PBXProject "RKParallaxEffect" */;
+			buildConfigurationList = 350375411A7F4CD500E0D7BE /* Build configuration list for PBXProject "Example" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -148,7 +166,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				350375451A7F4CD500E0D7BE /* RKParallaxEffect */,
+				350375451A7F4CD500E0D7BE /* Example */,
 			);
 		};
 /* End PBXProject section */
@@ -166,12 +184,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0D754EBCE616C93EAA7E1801 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RKParallaxEffect/Pods-RKParallaxEffect-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		50147210BCB88F5DF943C98B /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		84CC2C9444C96607F85928B2 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-RKParallaxEffect/Pods-RKParallaxEffect-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		350375421A7F4CD500E0D7BE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35DEA9261C5CCEAD00BA22CE /* RKParallaxEffect.swift in Sources */,
 				3503754C1A7F4CD500E0D7BE /* AppDelegate.swift in Sources */,
 				356366681A7F80B400D9354E /* TableViewController.swift in Sources */,
 			);
@@ -281,30 +346,32 @@
 		};
 		350375661A7F4CD600E0D7BE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79915F2F048BF551E7F26FAB /* Pods-RKParallaxEffect.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RKParallaxEffect/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rahulkatariya.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Example;
 			};
 			name = Debug;
 		};
 		350375671A7F4CD600E0D7BE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0C931A6F6310092822A8AB29 /* Pods-RKParallaxEffect.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = RKParallaxEffect/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.rahulkatariya.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Example;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		350375411A7F4CD500E0D7BE /* Build configuration list for PBXProject "RKParallaxEffect" */ = {
+		350375411A7F4CD500E0D7BE /* Build configuration list for PBXProject "Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				350375631A7F4CD600E0D7BE /* Debug */,
@@ -313,7 +380,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		350375651A7F4CD600E0D7BE /* Build configuration list for PBXNativeTarget "RKParallaxEffect" */ = {
+		350375651A7F4CD600E0D7BE /* Build configuration list for PBXNativeTarget "Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				350375661A7F4CD600E0D7BE /* Debug */,

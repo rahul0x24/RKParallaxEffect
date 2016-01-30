@@ -10,5 +10,5 @@ Pod::Spec.new do |s|
   s.platform     	 = :ios
   s.ios.deployment_target = '8.0'
   s.requires_arc	 = true
-  s.source_files	 = 'RKParallaxEffect/*.swift'
+  spec.source = { :http => "https://github.com/RahulKatariya/RKParallaxEffect/archive/v#{spec.version}.zip" }
 end
