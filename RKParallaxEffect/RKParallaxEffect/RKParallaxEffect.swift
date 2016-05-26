@@ -37,9 +37,13 @@ public class RKParallaxEffect: NSObject {
                     isFullScreenModeEnabled = true
                 }
                 tableHeaderView?.userInteractionEnabled = true
-                tableHeaderView?.addGestureRecognizer(UITapGestureRecognizer(target: self, action: Selector("handleTap:")))
+                tableHeaderView?.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(RKParallaxEffect.handleTap(_:))))
             }
         }
+    }
+    
+    deinit {
+        removeObservers()
     }
     
     var newFrame: CGRect {
