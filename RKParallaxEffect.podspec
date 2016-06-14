@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = "RKParallaxEffect"
-  s.version          = "1.0.0"
+  s.version          = "1.0.1"
   s.summary          = "RKParallaxEffect is written in Swift and provides API to create a parallax effect on UITableHeaderView"
   s.homepage         = "https://rahulkatariya.github.io/RKParallaxEffect"
   s.license          = { :type => "MIT", :file => "LICENSE" }

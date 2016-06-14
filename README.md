@@ -35,9 +35,13 @@ class TableViewController: UITableViewController {
 
     var parallaxEffect: RKParallaxEffect!
 
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        parallaxEffect = RKParallaxEffect(tableView: tableView)
+    }
+
     override func viewDidAppear(animated: Bool) {
         super.viewDidAppear(animated)
-        parallaxEffect = RKParallaxEffect(tableView: tableView)
         parallaxEffect.isParallaxEffectEnabled = true
         parallaxEffect.isFullScreenTapGestureRecognizerEnabled = true
         parallaxEffect.isFullScreenPanGestureRecognizerEnabled = true
