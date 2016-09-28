@@ -1,6 +1,6 @@
 # RKParallaxEffect
 
-[![CI Status](http://img.shields.io/travis/Rahul Katariya/RKParallaxEffect.svg?style=flat)](https://travis-ci.org/Rahul Katariya/RKParallaxEffect)
+[![Travis](https://img.shields.io/travis/RahulKatariya/RKParallaxEffect/master.svg)](https://travis-ci.org/RahulKatariya/RKParallaxEffect/branches)
 [![Version](https://img.shields.io/cocoapods/v/RKParallaxEffect.svg?style=flat)](http://cocoadocs.org/docsets/RKParallaxEffect)
 [![License](https://img.shields.io/cocoapods/l/RKParallaxEffect.svg?style=flat)](http://cocoadocs.org/docsets/RKParallaxEffect)
 [![Platform](https://img.shields.io/cocoapods/p/RKParallaxEffect.svg?style=flat)](http://cocoadocs.org/docsets/RKParallaxEffect)
