@@ -14,18 +14,17 @@
 
 ## Installation
 
-### Carthage
-
-    github "RahulKatariya/RKParallaxEffect" ~> 1.0
-
 ### CocoaPods
 
-RKParallaxEffect is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+RKParallaxEffect is available through [CocoaPods](http://cocoapods.org). To install it, simply add the following line to your Podfile:
 
     use_frameworks!
-    pod "RKParallaxEffect", ~> '1.0'
+    pod "RKParallaxEffect", ~> '2.0'
 
+
+### Carthage
+
+    github "RahulKatariya/RKParallaxEffect" ~> 2.0
 
 ## Usage
 ```swift
