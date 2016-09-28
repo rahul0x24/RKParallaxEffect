@@ -23,7 +23,7 @@ class TableViewController: UITableViewController {
 
     }
 
-    override func viewDidAppear(animated: Bool) {
+    override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         parallaxEffect = RKParallaxEffect(tableView: tableView)
         parallaxEffect.isParallaxEffectEnabled = true
@@ -38,15 +38,15 @@ class TableViewController: UITableViewController {
 
     // MARK: - Table view data source
 
-    override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete method implementation.
         // Return the number of rows in the section.
         return 20
     }
 
 
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as UITableViewCell
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as UITableViewCell
 
         // Configure the cell...
         cell.textLabel?.text = "Row \(indexPath.row)"

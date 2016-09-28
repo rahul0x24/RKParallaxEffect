@@ -10,7 +10,7 @@
 ## Requirements
 
 * iOS 8.0+
-* Xcode 7.0+
+* Xcode 8.0+
 
 ## Installation
 

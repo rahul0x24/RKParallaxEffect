@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		35DEA91C1C5CCE2400BA22CE /* RKParallaxEffect.h in Headers */ = {isa = PBXBuildFile; fileRef = 35DEA91B1C5CCE2400BA22CE /* RKParallaxEffect.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		35DEA9241C5CCE3D00BA22CE /* RKParallaxEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DEA9231C5CCE3D00BA22CE /* RKParallaxEffect.swift */; };
+		352D98B51D9C3142007BC704 /* RKParallaxEffect.h in Headers */ = {isa = PBXBuildFile; fileRef = 352D98B21D9C3142007BC704 /* RKParallaxEffect.h */; };
+		352D98B61D9C3142007BC704 /* RKParallaxEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 352D98B31D9C3142007BC704 /* RKParallaxEffect.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		352D98B11D9C3142007BC704 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		352D98B21D9C3142007BC704 /* RKParallaxEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKParallaxEffect.h; sourceTree = "<group>"; };
+		352D98B31D9C3142007BC704 /* RKParallaxEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RKParallaxEffect.swift; sourceTree = "<group>"; };
 		35DEA9181C5CCE2400BA22CE /* RKParallaxEffect.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RKParallaxEffect.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		35DEA91B1C5CCE2400BA22CE /* RKParallaxEffect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKParallaxEffect.h; sourceTree = "<group>"; };
-		35DEA91D1C5CCE2400BA22CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		35DEA9231C5CCE3D00BA22CE /* RKParallaxEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RKParallaxEffect.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,10 +29,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		352D98B01D9C3142007BC704 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				352D98B21D9C3142007BC704 /* RKParallaxEffect.h */,
+				352D98B31D9C3142007BC704 /* RKParallaxEffect.swift */,
+				352D98B11D9C3142007BC704 /* Info.plist */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 		35DEA90E1C5CCE2400BA22CE = {
 			isa = PBXGroup;
 			children = (
-				35DEA91A1C5CCE2400BA22CE /* RKParallaxEffect */,
+				352D98B01D9C3142007BC704 /* Sources */,
 				35DEA9191C5CCE2400BA22CE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -45,16 +55,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		35DEA91A1C5CCE2400BA22CE /* RKParallaxEffect */ = {
-			isa = PBXGroup;
-			children = (
-				35DEA91B1C5CCE2400BA22CE /* RKParallaxEffect.h */,
-				35DEA9231C5CCE3D00BA22CE /* RKParallaxEffect.swift */,
-				35DEA91D1C5CCE2400BA22CE /* Info.plist */,
-			);
-			path = RKParallaxEffect;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -62,7 +62,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35DEA91C1C5CCE2400BA22CE /* RKParallaxEffect.h in Headers */,
+				352D98B51D9C3142007BC704 /* RKParallaxEffect.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,6 +98,7 @@
 				TargetAttributes = {
 					35DEA9171C5CCE2400BA22CE = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -133,7 +134,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35DEA9241C5CCE3D00BA22CE /* RKParallaxEffect.swift in Sources */,
+				352D98B61D9C3142007BC704 /* RKParallaxEffect.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,7 +238,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = RKParallaxEffect/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -245,6 +246,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -256,13 +258,14 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = RKParallaxEffect/Info.plist;
+				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rahulkatariya.RKParallaxEffect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
