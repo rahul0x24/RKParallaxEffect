@@ -22,6 +22,13 @@
 			remoteGlobalIDString = 35DEA9181C5CCE2400BA22CE;
 			remoteInfo = RKParallaxEffect;
 		};
+		354AA8AF1D9CE22B0069B30E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 352D98A91D9C312F007BC704 /* RKParallaxEffect.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 35DEA9171C5CCE2400BA22CE;
+			remoteInfo = RKParallaxEffect;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -129,6 +136,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				354AA8B01D9CE22B0069B30E /* PBXTargetDependency */,
 			);
 			name = Example;
 			productName = RKParallaxEffect;
@@ -210,6 +218,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		354AA8B01D9CE22B0069B30E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RKParallaxEffect;
+			targetProxy = 354AA8AF1D9CE22B0069B30E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3503754F1A7F4CD500E0D7BE /* Main.storyboard */ = {
