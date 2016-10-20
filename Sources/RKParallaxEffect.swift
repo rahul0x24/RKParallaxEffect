@@ -8,13 +8,13 @@
 
 import UIKit
 
-public class RKParallaxEffect: NSObject {
+open class RKParallaxEffect: NSObject {
     
     var tableView: UITableView!
     var tableHeaderView: UIView?
     var tableViewTopInset: CGFloat = 0
     
-    public var isParallaxEffectEnabled: Bool = false {
+    open var isParallaxEffectEnabled: Bool = false {
         didSet {
             if isParallaxEffectEnabled {
                 self.setupTableHeaderView()
@@ -30,13 +30,13 @@ public class RKParallaxEffect: NSObject {
     var isFullScreen = false
     var initialContentSize: CGSize!
     
-    public var isFullScreenTapGestureRecognizerEnabled: Bool = false {
+    open var isFullScreenTapGestureRecognizerEnabled: Bool = false {
         didSet {
             if isFullScreenTapGestureRecognizerEnabled {
                 if !isFullScreenModeEnabled {
                     isFullScreenModeEnabled = true
                 }
-                tableHeaderView?.userInteractionEnabled = true
+                tableHeaderView?.isUserInteractionEnabled = true
                 tableHeaderView?.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(RKParallaxEffect.handleTap(_:))))
             }
         }
@@ -51,15 +51,15 @@ public class RKParallaxEffect: NSObject {
             if isFullScreen {
                 return tableHeaderViewIntitalFrame
             } else {
-                return CGRectMake(tableView.frame.origin.x, -(tableView.frame.size.height-tableViewTopInset), tableView.frame.size.width, tableView.frame.size.height-tableViewTopInset)
+                return CGRect(x: tableView.frame.origin.x, y: -(tableView.frame.size.height-tableViewTopInset), width: tableView.frame.size.width, height: tableView.frame.size.height-tableViewTopInset)
             }
         }
     }
     
     //FullScreen Pan
-    public var thresholdValue: CGFloat = 100.0
+    open var thresholdValue: CGFloat = 100.0
     
-    public var isFullScreenPanGestureRecognizerEnabled: Bool = false {
+    open var isFullScreenPanGestureRecognizerEnabled: Bool = false {
         didSet {
             if isFullScreenPanGestureRecognizerEnabled {
                 if !isFullScreenModeEnabled {
@@ -68,7 +68,7 @@ public class RKParallaxEffect: NSObject {
                 if !isParallaxEffectEnabled {
                     isParallaxEffectEnabled = true
                 }
-                tableHeaderView?.userInteractionEnabled = true
+                tableHeaderView?.isUserInteractionEnabled = true
             }
         }
     }
@@ -104,13 +104,13 @@ public class RKParallaxEffect: NSObject {
         contentInset.top = tableViewTopInset + tableHeaderViewIntitalFrame.size.height
         tableView.contentInset = contentInset
         
-        tableView.setContentOffset(CGPointMake(tableView.contentOffset.x, -(tableHeaderViewIntitalFrame.size.height+tableViewTopInset)), animated:false)
+        tableView.setContentOffset(CGPoint(x: tableView.contentOffset.x, y: -(tableHeaderViewIntitalFrame.size.height+tableViewTopInset)), animated:false)
         
     }
     
     func addObservers() {
-        tableView.addObserver(self, forKeyPath: "contentOffset", options: .New, context: nil)
-        tableHeaderView?.addObserver(self, forKeyPath: "frame", options: .New, context: nil)
+        tableView.addObserver(self, forKeyPath: "contentOffset", options: .new, context: nil)
+        tableHeaderView?.addObserver(self, forKeyPath: "frame", options: .new, context: nil)
     }
     
     func removeObservers() {
@@ -118,33 +118,33 @@ public class RKParallaxEffect: NSObject {
         tableHeaderView?.removeObserver(self, forKeyPath: "frame")
     }
     
-    public override func observeValueForKeyPath(keyPath: String?, ofObject object: AnyObject?, change: [String : AnyObject]?, context: UnsafeMutablePointer<Void>) {
+    open override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {
         if keyPath == "contentOffset" {
-            adjustParallaxEffectOnTableHeaderViewWithContentOffset(change![NSKeyValueChangeNewKey]!.CGPointValue)
+            adjustParallaxEffectOnTableHeaderViewWithContentOffset((change![NSKeyValueChangeKey.newKey]! as AnyObject).cgPointValue)
         } else if keyPath == "frame" {
             tableView.layoutIfNeeded()
         }
     }
     
-    func adjustParallaxEffectOnTableHeaderViewWithContentOffset(contentOffset:CGPoint) {
+    func adjustParallaxEffectOnTableHeaderViewWithContentOffset(_ contentOffset:CGPoint) {
         if let thv = tableHeaderView {
             let yOffset = -1*(contentOffset.y+tableViewTopInset)
             if yOffset > 0 {
                 if isParallaxEffectEnabled {
-                    thv.frame = CGRectMake(0, -yOffset, CGRectGetWidth(thv.frame), yOffset)
+                    thv.frame = CGRect(x: 0, y: -yOffset, width: thv.frame.width, height: yOffset)
                 }
                 if isFullScreenModeEnabled && !isAnimating {
                     if isFullScreenPanGestureRecognizerEnabled {
                         if !isFullScreen && yOffset > tableHeaderViewIntitalFrame.size.height + thresholdValue {
-                            tableView.scrollEnabled = false
+                            tableView.isScrollEnabled = false
                             var frame = tableHeaderViewIntitalFrame
-                            frame.size.height = yOffset
-                            thv.frame = frame
+                            frame?.size.height = yOffset
+                            thv.frame = frame!
                             tableView.layoutIfNeeded()
                             enterFullScreen()
                         } else if isFullScreen && yOffset < tableView.frame.size.height-tableViewTopInset-thresholdValue {
-                            tableView.scrollEnabled = false
-                            var frame = CGRectMake(tableView.frame.origin.x, -(tableView.frame.size.height-tableViewTopInset), tableView.frame.size.width, tableView.frame.size.height-tableViewTopInset)
+                            tableView.isScrollEnabled = false
+                            var frame = CGRect(x: tableView.frame.origin.x, y: -(tableView.frame.size.height-tableViewTopInset), width: tableView.frame.size.width, height: tableView.frame.size.height-tableViewTopInset)
                             frame.size.height -= thresholdValue
                             thv.frame = frame
                             tableView.layoutIfNeeded()
@@ -168,9 +168,9 @@ public class RKParallaxEffect: NSObject {
         }
     }
     
-    func handleTap(sender:AnyObject?) {
+    func handleTap(_ sender:AnyObject?) {
         self.willChangeFullScreenMode()
-        UIView.animateWithDuration(0.3, delay: 0, options: [.CurveEaseInOut, .BeginFromCurrentState, .BeginFromCurrentState], animations: { () -> Void in
+        UIView.animate(withDuration: 0.3, delay: 0, options: [.beginFromCurrentState, .beginFromCurrentState], animations: { () -> Void in
             self.adjustTableViewContentInset()
             self.tableHeaderView!.frame = self.newFrame
             }) { (completed: Bool) -> Void in
@@ -181,7 +181,7 @@ public class RKParallaxEffect: NSObject {
     
     func adjustTableViewContentInset() {
         //Adjust ContentOffset
-        tableView.setContentOffset(CGPointMake(tableView.contentOffset.x,-(self.newFrame.size.height+self.tableViewTopInset)), animated: false)
+        tableView.setContentOffset(CGPoint(x: tableView.contentOffset.x,y: -(self.newFrame.size.height+self.tableViewTopInset)), animated: false)
         
         //Adjust ContentInset
         var contentInset = tableView.contentInset
@@ -201,9 +201,9 @@ public class RKParallaxEffect: NSObject {
     func didChangeFullScreenMode() {
         isFullScreen = !isFullScreen
         isAnimating = false
-        tableView.scrollEnabled = true
+        tableView.isScrollEnabled = true
         if isFullScreen {
-            tableView.contentSize = CGSizeMake(initialContentSize.width, 0)
+            tableView.contentSize = CGSize(width: initialContentSize.width, height: 0)
         } else {
             tableView.contentSize = initialContentSize
         }

@@ -1,6 +1,6 @@
 # RKParallaxEffect
 
-[![CI Status](http://img.shields.io/travis/Rahul Katariya/RKParallaxEffect.svg?style=flat)](https://travis-ci.org/Rahul Katariya/RKParallaxEffect)
+[![Travis](https://img.shields.io/travis/RahulKatariya/RKParallaxEffect/master.svg)](https://travis-ci.org/RahulKatariya/RKParallaxEffect/branches)
 [![Version](https://img.shields.io/cocoapods/v/RKParallaxEffect.svg?style=flat)](http://cocoadocs.org/docsets/RKParallaxEffect)
 [![License](https://img.shields.io/cocoapods/l/RKParallaxEffect.svg?style=flat)](http://cocoadocs.org/docsets/RKParallaxEffect)
 [![Platform](https://img.shields.io/cocoapods/p/RKParallaxEffect.svg?style=flat)](http://cocoadocs.org/docsets/RKParallaxEffect)
@@ -10,22 +10,21 @@
 ## Requirements
 
 * iOS 8.0+
-* Xcode 7.0+
+* Xcode 8.0+
 
 ## Installation
 
-### Carthage
-
-    github "RahulKatariya/RKParallaxEffect" ~> 1.0
-
 ### CocoaPods
 
-RKParallaxEffect is available through [CocoaPods](http://cocoapods.org). To install
-it, simply add the following line to your Podfile:
+RKParallaxEffect is available through [CocoaPods](http://cocoapods.org). To install it, simply add the following line to your Podfile:
 
     use_frameworks!
-    pod "RKParallaxEffect", ~> '1.0'
+    pod "RKParallaxEffect", ~> '2.0'
 
+
+### Carthage
+
+    github "RahulKatariya/RKParallaxEffect" ~> 2.0
 
 ## Usage
 ```swift
