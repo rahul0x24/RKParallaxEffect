@@ -168,7 +168,7 @@ open class RKParallaxEffect: NSObject {
         }
     }
     
-    func handleTap(_ sender:AnyObject?) {
+    @objc func handleTap(_ sender:AnyObject?) {
         self.willChangeFullScreenMode()
         UIView.animate(withDuration: 0.3, delay: 0, options: [.beginFromCurrentState, .beginFromCurrentState], animations: { () -> Void in
             self.adjustTableViewContentInset()
